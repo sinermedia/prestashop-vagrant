@@ -1,5 +1,5 @@
 # Vagrant Prestashop
-A vagrant box for prestashop
+A vagrant box for Prestashop development.
 
 ## Prestashop Version
 You can install any PHP version hosted on ppa:ondrej/php. Edit phpVersion variable on bootstrap.sh.
