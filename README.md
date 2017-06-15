@@ -1,6 +1,12 @@
 # Vagrant Prestashop
 A vagrant box for prestashop
 
+## Prestashop Version
+You can install any PHP version hosted on ppa:ondrej/php. Edit phpVersion variable on bootstrap.sh.
+
+## Prestashop Version
+You can install any Prestashop version. Edit prestaShopFile variable on bootstrap.sh.
+
 ## Includes: 
 * wget 
 * php7.1
@@ -15,6 +21,3 @@ A vagrant box for prestashop
 * php7.1-curl
 * php7.1-intl
 * Prestashop 1.7.1.2
-
-## Prestashop Version
-You can install any prestashop version. Edit bootstrap.sh.
