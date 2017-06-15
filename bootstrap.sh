@@ -1,4 +1,5 @@
 prestaShopFile=prestashop_1.7.1.2.zip
+phpVersion=7.1
 
 echo "Actualizando la lista de paquetes..."
 sudo apt-get -qq update
@@ -11,8 +12,8 @@ sudo add-apt-repository -y ppa:ondrej/php
 sudo add-apt-repository -y ppa:ondrej/apache2
 sudo apt-get -qq update
 
-#deb http://ppa.launchpad.net/ondrej/php/ubuntu trusty main 
-#deb-src http://ppa.launchpad.net/ondrej/php/ubuntu trusty main 
+#deb http://ppa.launchpad.net/ondrej/php/ubuntu trusty main
+#deb-src http://ppa.launchpad.net/ondrej/php/ubuntu trusty main
 
 #sudo apt-get update
 
@@ -23,24 +24,24 @@ sudo apt-get install -y apache2
 # export DEBIAN_FRONTEND=noninteractive
 
 
-echo ">>>> Instalando PHP 7.1"
+echo ">>>> Instalando PHP $phpVersion"
 echo "-------------------------------"
-sudo apt-get install -y -qq wget php7.1
-echo ">>>> Instalando libapache2-mod-php7.1"
-sudo apt-get install -y -qq libapache2-mod-php7.1
+sudo apt-get install -y -qq wget php$phpVersion
+echo ">>>> Instalando libapache2-mod-php$phpVersion"
+sudo apt-get install -y -qq libapache2-mod-php$phpVersion
 echo ">>>> Instalando librería GD"
-sudo apt-get install -y -qq php7.1-gd
+sudo apt-get install -y -qq php$phpVersion-gd
 echo ">>>> Instalando el servidor MySQL"
 sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password password prestashop'
 sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password_again password prestashop'
 sudo apt-get install -y -qq mysql-server-5.7
-sudo apt-get install -y php7.1-xml
-sudo apt-get install -y php7.1-mcrypt
-sudo apt-get install -y php7.1-mbstring
-sudo apt-get install -y php7.1-mysql
-sudo apt-get install -y php7.1-zip
-sudo apt-get install -y php7.1-curl
-sudo apt-get install -y php7.1-intl
+sudo apt-get install -y php$phpVersion-xml
+sudo apt-get install -y php$phpVersion-mcrypt
+sudo apt-get install -y php$phpVersion-mbstring
+sudo apt-get install -y php$phpVersion-mysql
+sudo apt-get install -y php$phpVersion-zip
+sudo apt-get install -y php$phpVersion-curl
+sudo apt-get install -y php$phpVersion-intl
 
 sudo a2enmod rewrite
 
@@ -50,7 +51,7 @@ ln -fs /vagrant /var/www/html
 
 sudo service apache2 restart
 
-# 
+#
 cd /home/ubuntu
 
 # Download PrestaShop
