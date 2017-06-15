@@ -4,7 +4,6 @@
 # Vagrantfile API/syntax version. Don't touch unless you know what you're doing!
 VAGRANTFILE_API_VERSION   = "2"
 hostname                  = "prestashop.dev"
-
 server_ip                 = "192.168.22.10"
 server_cpus               = "1"   # Cores
 server_memory             = "2384" # MB
