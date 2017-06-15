@@ -1,9 +1,9 @@
 # Vagrant Prestashop
 A vagrant box for Prestashop development.
 
-## Dependes
-* Vagrant
-* VirtualBox/VmWare
+## Dependences
+* [Vagrant](https://www.vagrantup.com/)
+* [VirtualBox](https://www.virtualbox.org/) / [VmWare](https://www.vmware.com/es.html)
 
 ## How to install
 ````
