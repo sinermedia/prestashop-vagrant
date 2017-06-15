@@ -13,6 +13,9 @@ vagrant up
 ````
 Go to http://192.168.22.10/prestashop and follow the installation steps.
 
+**Create more than one virtual Machine**        
+If you want create more than one Virtual Machine, you must change the <code>server_ip</code> <code>hostname</code> on the VagrantFile with differents values from another VM created. If you don't change this values, you will overwrite your VM. 
+
 ## Database connection
 **Database name:** prestashop     
 **User:** root     
