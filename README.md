@@ -14,9 +14,9 @@ vagrant up
 Go to http://192.168.22.10/prestashop and follow the installation steps.
 
 ## Database connection
-*Database name:* prestashop     
-*User:* root     
-*Password:* prestashop       
+**Database name:** prestashop     
+**User:** root     
+**Password:** prestashop       
 
 ## Prestashop Version
 You can install any PHP version hosted on ppa:ondrej/php. Edit phpVersion variable on bootstrap.sh.
