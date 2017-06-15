@@ -19,10 +19,10 @@ Go to http://192.168.22.10/prestashop and follow the installation steps.
 **Password:** prestashop       
 
 ## Prestashop Version
-You can install any PHP version hosted on ppa:ondrej/php. Edit phpVersion variable on bootstrap.sh.
+You can install any PHP version hosted on ppa:ondrej/php. Edit <code>phpVersion</code> variable on bootstrap.sh.
 
 ## Prestashop Version
-You can install any Prestashop version. Edit prestaShopFile variable on bootstrap.sh.
+You can install any Prestashop version. Edit <code>prestaShopFile</code> variable on bootstrap.sh.
 
 ## Includes: 
 * wget 
