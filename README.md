@@ -25,7 +25,12 @@ If you want create more than one Virtual Machine, you must change the <code>serv
 ## Database connection
 **Database name:** prestashop     
 **User:** root     
-**Password:** prestashop       
+**Password:** prestashop
+
+````
+vagrant ssh
+mysql -h localhost -u root -pprestashop prestashop
+````
 
 ## Includes: 
 * wget 
