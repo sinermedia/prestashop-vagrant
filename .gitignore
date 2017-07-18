@@ -6,3 +6,5 @@
 .idea/prestashop-vagrant.iml
 
 .idea/vcs.xml
+
+.vagrant/
