@@ -32,7 +32,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     config.vm.network :private_network, :ip => "0.0.0.0", :auto_network => true
   else
     config.vm.network :private_network, ip: server_ip
-    config.vm.network :forwarded_port, guest: 80, host: 8000
+    config.vm.network :forwarded_port, guest: 80, host: 8000, auto_correct: true
   end
 
 
