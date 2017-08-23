@@ -27,6 +27,21 @@ If you want create more than one Virtual Machine, you must change the <code>serv
 **User:** root     
 **Password:** prestashop
 
+## Database connection Navicat
+On General     
+**Host Name/IP Address:** localhost     
+**Port:** 3306 (see if the VM fixed port collision on start)     
+**User Name:** root        
+**Password:** wordpress                
+        
+SSH        
+**Host Name/IP Address:** 192.168.22.10 (see vagrantFile if you changed this IP)        
+**Port:** 22        
+**User Name:** ubuntu        
+**Authentication Method:** Password        
+**Password:** See https://askubuntu.com/a/875659/451151 to get VM password (~/.vagrant.d/boxes/...)        
+        
+        
 ````
 vagrant ssh
 mysql -h localhost -u root -pprestashop prestashop
