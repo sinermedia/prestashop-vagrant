@@ -27,6 +27,11 @@ If you want create more than one Virtual Machine, you must change the <code>serv
 **User:** root     
 **Password:** prestashop
 
+````
+vagrant ssh
+mysql -h localhost -u root -pprestashop prestashop
+````
+
 ## Database connection Navicat
 On General     
 **Host Name/IP Address:** localhost     
@@ -42,11 +47,6 @@ SSH
 **Password:** See https://askubuntu.com/a/875659/451151 to get VM password (~/.vagrant.d/boxes/...)        
         
         
-````
-vagrant ssh
-mysql -h localhost -u root -pprestashop prestashop
-````
-
 ## Includes: 
 * wget 
 * php
