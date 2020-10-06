@@ -1,4 +1,4 @@
-prestaShopFile=prestashop_1.7.1.2.zip
+prestaShopFile=prestashop_1.7.6.8.zip
 phpVersion=7.1
 
 echo "Actualizando la lista de paquetes..."
