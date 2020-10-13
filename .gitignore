@@ -8,3 +8,6 @@
 .idea/vcs.xml
 
 .vagrant/
+.DS_Store
+.idea/misc.xml
+ubuntu-xenial-16.04-cloudimg-console.log
